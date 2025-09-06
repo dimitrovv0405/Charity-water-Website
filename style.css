@@ -1,0 +1,87 @@
+/* General Styles */
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: Proxima Nova, sans-serif;
+}
+
+
+/* Header Styles */
+header {
+    height: 80px;
+    padding: 0 40px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    height: 20px;
+}
+
+header nav a {
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #1a1a1a;
+    margin: 0 20px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+/* Hero Image Section */
+.hero-image {
+    width: 100%;
+    height: 900px;
+    background-image: url(Madagascar_2019_CG-4017.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.hero-text {
+    margin-top: -500px;
+    max-width: 500px;
+    padding: 80px 40px;
+    color: #ffffff;
+    border-radius: 7px;;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #ffffff9e;
+    margin-bottom: 30px;
+    line-height: 1.5
+}
+
+
+/* Join the Movement Button */
+.join-the-movement-button a {
+    cursor: pointer;
+    display: inline-block;
+    background-color: #ffd700; /* Yellow */
+    color: #1a1a1a; /* Dark text */
+    padding: 20px 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(255,215,0,0.15);
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.join-the-movement-button a:hover {
+    background-color: #ffe066;
+    box-shadow: 0 6px 24px rgba(255,215,0,0.25);
+}
+
