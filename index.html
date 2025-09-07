@@ -10,18 +10,37 @@
     <!--Top part of the website where the logo will be and all other navigational links-->
     <header>
         <img src="charity-water-seeklogo.png" alt="Charity Water Logo" class="logo"> <!--Logo image-->
+
+        <!--Contents inside "About Us" button-->
+        <div id="about-us-content" style="display:none;">
+            <h3>About Us:</h3>
+            <p>Charity: Water is a non-profit organization bringing clean and safe drinking water 
+                to people in developing countries. Our mission is to solve the water crisis and 
+                improve lives through sustainable water projects.</p>
+        </div>  
         
+        <!--Contents inside "Why Water" button-->
+        <div id="why-water-content" style="display:none;">
+            <h3>Why Water?</h3>
+            <p>With every dollar you give goes directly to clean water projects. The organization 
+                proves each project with photos and GPS coordinates, partners with locals 
+                for long-term sustainability, and has already brought safe water to millions. 
+                With charity: water, your gift creates lasting change you can see.</p>
+        </div>
+
+
         <!--Navigation links-->
         <nav>
             <ul class="nav-links">
-                <a href="#">Take Action</a>
-                <a href="#">About Us</a>
-                <a href="#">Why Water?</a>
-                <a href="#">Sign in</a>
-                <a href="#" style="background:#77a8bb; padding:10px 20px; border-radius:20px;">Donate</a>
+                <button id="take-action-btn" onclick="donationBox()">Take Action</button> <!--Take Action button-->
+                <button id="about-us-btn" onclick="showAboutUs()">About Us</button> <!--About Us button-->
+                <button id="why-water-btn" onclick="showWhyWater()">Why Water?</button> <!--Why Water? button-->
+                <button id="sign-in-btn" onclick="showSignInForm()">Sign In</button>  <!--Sign in button-->
+                <button id="donate-btn" style="background:#77a8bb; padding:10px 20px; border-radius:20px;" onclick="donationBox()">Donate</button> <!--Donate button-->
             </ul>
         </nav>
     </header>
+
 
     <!--Section of the website-->
     <section class="hero-image">
@@ -30,9 +49,12 @@
             <p>Donate easily from your phone-100% goes to clean water projects, 
                 and you will see real updates from the communities you helped.</p>
             <div class="join-the-movement-button">
-                <a href="#">💧Join The Movement💧</a>
+                <a href="#" onclick="donationBox()">💧Join The Movement💧</a>
             </div>
         </div>
     </section>
+
+    <!--Function of each button on the website-->
+    <script src="script.js"></script>
 </body>
 </html>

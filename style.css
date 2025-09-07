@@ -20,14 +20,50 @@ header .logo {
     height: 20px;
 }
 
-header nav a {
+header nav button {
     cursor: pointer;
+    background: none;
+    border: none;
     text-align: center;
     text-decoration: none;
     color: #1a1a1a;
     margin: 0 20px;
     font-weight: 500;
     font-size: 16px;
+    text-decoration: underline;
+    padding: 0;
+    box-shadow: none;
+    transition: color 0.2s;
+}
+
+header nav button:hover {
+    color: #ffd700;
+    background: none;
+    box-shadow: none;
+}
+
+#why-water-content {
+    display: none;
+    position: fixed;
+    top: 60px;
+    right: 100px;
+    width: 300px;
+    background-color: #ffd700;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+#about-us-content {
+    display: none;
+    position: fixed;
+    top: 60px;
+    right: 100px;
+    width: 300px;
+    background-color: #ffd700;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 1000;
 }
 
 
@@ -83,5 +119,62 @@ header nav a {
 .join-the-movement-button a:hover {
     background-color: #ffe066;
     box-shadow: 0 6px 24px rgba(255,215,0,0.25);
+}
+
+
+/* Sign In Form Styles */
+#sign-in-form {
+    position: fixed;
+    top: 100px;
+    right: 100px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 1001;
+    border-radius: 8px;
+    min-width: 250px;
+}
+
+#sign-in-form h3 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: #1a1a1a;
+}
+
+#sign-in-form input[type="text"],
+#sign-in-form input[type="password"] {
+    display: block;
+    margin-bottom: 12px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#sign-in-form button {
+    background: #ffd700;
+    color: #1a1a1a;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    transition: background 0.2s;
+}
+
+#sign-in-form button:hover {
+    background: #5c8fa3;
+}
+
+#close-sign-in {
+    background: none;
+    color: #1a1a1a;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 8px;
 }
 
