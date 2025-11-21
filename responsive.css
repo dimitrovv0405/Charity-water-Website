@@ -1,5 +1,5 @@
 /* Responsive style for Ipad */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 820px) {
     header .logo {
         height: 15px;
         margin-right: 40px;
@@ -12,21 +12,28 @@
     
     .hero-text {
         padding: 20px;
-        max-width: 350px;
-        margin-top: -300px;
+        max-width: 400px;
+        margin-top: -450px;
+    }
+
+    .hero-image {
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .hero-text h1 {
-        font-size: 28px;
+        font-size: 35px;
     }
 
     .hero-text p {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .join-the-movement-button a {
-        font-size: 16px;
-        padding: 15px 20px;
+        font-size: 20px;
+        padding: 20px;
     }
 }
 
