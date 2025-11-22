@@ -39,5 +39,83 @@
 
 /* Responsive style for mobile phones */
 @media only screen and (max-width: 480px) {
+    header .logo {
+        height: 15px;
+        margin-right: 200px;
+        margin-left: 5px;
+    }
 
+    header .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    nav .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+        top: 140px;
+        right: 130px;
+        background-color: beige;
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav .nav-links #take-action-button {
+        margin-top: 10px;
+    }
+
+    nav .nav-links button {
+        font-size: 15px;
+        margin: 10px;
+    }
+
+    .hero-text {
+        padding: 15px;
+        max-width: 225px;
+        margin-top: -300px;
+    }
+
+    .hero-text h1 {
+        font-size: 25px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .hero-image {
+        min-height: 80vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+
+    .join-the-movement-button a {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    #why-water-content {
+        right: 300px;
+        width: 200px;
+    }
+
+    #about-us-content {
+        right: 300px;
+        width: 200px;
+    }
+
+    #take-action-button, #donate-button, #sign-up-button {
+        font-size: 14px;
+        padding: 10px 15px;
+        width: 120px;
+        right: 40px;
+    }
 }

@@ -181,3 +181,18 @@ function launchConfetti(canvasId, parent) {
     }
     drawConfetti();
 }
+
+// ✖ ☰
+function toggleMenu() {
+    const toggleBtn = document.querySelector('header .menu-toggle'); // Added missing dot
+    const nav = document.querySelector('nav .nav-links'); // Changed to querySelector (single element)
+
+    // Toggle the navigation menu visibility
+    if (nav.style.display === 'block') {
+        nav.style.display = 'none';
+        toggleBtn.textContent = '☰';
+    } else {
+        nav.style.display = 'block';
+        toggleBtn.textContent = '✖';
+    }
+}
