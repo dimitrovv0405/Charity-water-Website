@@ -41,8 +41,8 @@
 @media only screen and (max-width: 480px) {
     header .logo {
         height: 15px;
-        margin-right: 200px;
-        margin-left: 5px;
+        margin-right: 170px;
+        margin-left: 3px;
     }
 
     header .menu-toggle {
@@ -103,12 +103,12 @@
     }
 
     #why-water-content {
-        right: 300px;
+        right: 250px;
         width: 200px;
     }
 
     #about-us-content {
-        right: 300px;
+        right: 250px;
         width: 200px;
     }
 
